@@ -4,7 +4,7 @@
 
 Thanks to this web scraping app I was able to find the most decent priced graphics card
 
-## Needs to be updated
+## Is being updated (6th of May)
 
 Unfortunately, my app does not work anymore. RTV EURO AGD got brand new website and all of the tags I fetched previously differ from newer version.
 
