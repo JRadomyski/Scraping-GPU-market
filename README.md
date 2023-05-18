@@ -4,13 +4,9 @@
 
 Thanks to this web scraping app I was able to find the most decent priced graphics card
 
-## Update
-
-Unfortunately, I needed to change base website from RTV EURO AGD to Morele. Euro company got brand new website and all of the tags I fetched previously are nearly impossible to fetch.
-
 ## Future of project
 
-This project will need to be updated periodically because of changing UI and HTML code of the website.
+This project will need to be updated periodically because of changing HTML code of the website.
 
 ## Frameworks/libs I used:
 
