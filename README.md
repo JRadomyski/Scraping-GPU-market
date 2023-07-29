@@ -1,21 +1,21 @@
-# Scraping GPUs from Morele.net
+# Scraping GPUs from Morele.net :mag_right:
 
-## My second Python project
+This is my second Python project, a web scraping application, which helped me find the most decently priced graphics card.
 
-Thanks to this web scraping app I was able to find the most decent priced graphics card
+## Future of the Project :crystal_ball:
 
-## Future of project
+The project will need to be updated periodically due to the changing HTML code of the website.
 
-This project will need to be updated periodically because of changing HTML code of the website.
+## Technologies :wrench:
 
-## Frameworks/libs I used:
+The project was built using the following libraries and frameworks:
 
-+ Beautiful Soup
-+ Requests
-+ csv
+- Beautiful Soup :book:
+- Requests :outbox_tray:
+- csv :bar_chart:
 
-To get more info check `requirements.txt` file
+To get more info, check the `requirements.txt` file.
 
-## Docs
-Beautiful Soup URL:
-`crummy.com/software/BeautifulSoup/bs4/doc/`
+## Documentation :book:
+
+You can find the documentation for Beautiful Soup [here](http://www.crummy.com/software/BeautifulSoup/bs4/doc/).
