@@ -1,14 +1,16 @@
-# Scraping GPUs from Morele.net :mag_right:
+# GPU Scraper for Morele.net 🔍
 
-This is my second Python project, a web scraping application, which helped me find the most decently priced graphics card.
+This web scraping application is designed to help users find the best available GPU on Morele.net.
 
-## Future of the Project :crystal_ball:
+## Project Overview
+- **Objective**: To extract GPU information and pricing details from Morele.net efficiently.
+- **Technology Stack**: Python, Beautiful Soup, Pandas, Matplotlib
 
-The project will need to be updated periodically due to the changing HTML code of the website.
+## Future Considerations 🛠
 
-## Hot to run it 🚀
-To get more info, check the `requirements.txt` file.
+The nature of web scraping means that the application will need periodic updates. This is due to the potential changes in the HTML structure of Morele.net website over time. As such, it's essential to monitor the application to ensure consistent data accuracy.
 
-## Documentation :book:
+## Data Result
+![GeForce vs Radeon](Assets/chart.png)
 
-You can find the documentation for Beautiful Soup [here](http://www.crummy.com/software/BeautifulSoup/bs4/doc/).
+
