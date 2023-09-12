@@ -19,7 +19,7 @@ PAGES = [
 
 with open('products.csv', mode='w', encoding='utf-8', newline='') as csv_file:
     writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-    writer.writerow(['Title', 'Price'])
+    writer.writerow(['Title'])
     for page in PAGES:
         url = BASE_URL + page
         page = get(url)
@@ -30,4 +30,4 @@ with open('products.csv', mode='w', encoding='utf-8', newline='') as csv_file:
             for link in links:
                 title = link.get('title')
                 price = product.find('div', class_='price-new').get_text(strip=True)
-                writer.writerow([title, price])
+                writer.writerow([title])
