@@ -3,7 +3,7 @@
 This web scraping application is designed to help users find the best available GPU on Morele.net.
 
 ## Project Overview
-- **Objective**: To extract GPU information and pricing details from Morele.net efficiently.
+- **Objective**: To extract GPU information from Morele.net efficiently.
 - **Technology Stack**: Python, Beautiful Soup, Pandas, Matplotlib
 
 ## Future Considerations 🛠
