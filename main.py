@@ -19,15 +19,21 @@ PAGES = [
 
 with open('products.csv', mode='w', encoding='utf-8', newline='') as csv_file:
     writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-    writer.writerow(['Title'])
+    writer.writerow(['Title', 'Price'])
     for page in PAGES:
         url = BASE_URL + page
-        page = get(url)
-        sp = BeautifulSoup(page.content, 'html.parser')
-        products = sp.findAll('div', class_='cat-list-products')
+        response = get(url)
+        sp = BeautifulSoup(response.content, 'html.parser')
+        products = sp.findAll('div', class_='cat-product')
         for product in products:
-            links = product.findAll('a', class_='productLink')
-            for link in links:
-                title = link.get('title')
-                price = product.find('div', class_='price-new').get_text(strip=True)
-                writer.writerow([title])
+            title_tag = product.find('a', class_='productLink')
+            if title_tag:
+                title = title_tag.get('title')
+            else:
+                title = ''
+            price_tag = product.find('div', class_='price-new')
+            if price_tag:
+                price = price_tag.get_text(strip=True)
+            else:
+                price = ''
+            writer.writerow([title, price])
